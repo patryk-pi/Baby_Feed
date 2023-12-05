@@ -1,0 +1,19 @@
+.logo {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        width: 5rem;
+        height: auto;
+        margin: 0;
+        fill: $color-white;
+    }
+
+    &__text {
+        font-size: 2rem;
+
+        &-down {
+            margin-left: 2rem;
+        }
+    }
+}
