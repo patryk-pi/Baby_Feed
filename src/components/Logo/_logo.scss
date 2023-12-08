@@ -12,8 +12,10 @@
     &__text {
         font-size: 2rem;
 
-        &-down {
-            margin-left: 2rem;
+        p {
+            &:last-child {
+                margin-left: 2rem;
+            }
         }
     }
 }
