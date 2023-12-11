@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+// #__next {
+//   width: 100vw;
+//   overflow: hidden;
+// }
+
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+    -webkit-text-size-adjust: none;
+    color: $color-white;
+
+    //   @include xxl {
+    //     font-size: 55%;
+    //   }
+
+    //   @include xl {
+    //     font-size: 50%;
+    //   }
+
+    //   @include l {
+    //     font-size: 45%;
+    //   }
+
+    //   @include m {
+    //     font-size: 40%;
+    //   }
+
+    //   @include s {
+    //     font-size: 35%;
+    //   }
+
+    //   @include xs {
+    //     font-size: 30%;
+    //   }
+
+    //   @include mobileXL {
+    //     font-size: 62.5%;
+    //   }
+
+    //   @include mobileL {
+    //     font-size: 55%;
+    //   }
+
+    //   @include mobileM {
+    //     font-size: 50%;
+    //   }
+
+    //   @include mobileS {
+    //     font-size: 42%;
+    //   }
+
+    //   @include mobileXS {
+    //     font-size: 35%;
+    //   }
+}
+
+body {
+    background-color: $color-primary;
+}
