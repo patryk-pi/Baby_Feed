@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
 import Video from "@/components/Video/Video";
 
@@ -6,6 +7,7 @@ const Home = () => {
         <>
             <Navbar />
             <Video />
+            <Hero />
         </>
     );
 };

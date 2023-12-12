@@ -1,0 +1,9 @@
+.hero {
+    width: $container-width;
+    margin: 10rem auto 0;
+
+    &__header {
+        font-size: 4rem;
+        text-align: center;
+    }
+}
