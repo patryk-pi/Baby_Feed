@@ -1,0 +1,16 @@
+.event {
+    width: $container-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-size: 4em;
+        font-weight: 700;
+    }
+
+    &__text {
+        text-align: center;
+    }
+}

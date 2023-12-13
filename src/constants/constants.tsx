@@ -6,7 +6,7 @@ export const weddingText2: string =
 export const weddingText3: string =
     "Niech muzyka, którą dla Was zagram, będzie pięknym tłem dla Waszych wspomnień. Skontaktujcie się ze mną, aby omówić szczegóły Waszej imprezy i zapewnić sobie niezapomniane wrażenia muzyczne, które będą doskonale współgrały z magią tego wyjątkowego dnia.";
 
-export const companyTitle: string = "Event firmowy";
+export const companyTitle: string = "Eventy firmowe";
 export const companyText: string =
     "Planujesz event firmowy i chcesz, aby był wyjątkowy? Jako doświadczony DJ, oferuję nie tylko profesjonalną oprawę muzyczną, ale także gwarancję niezapomnianych wrażeń dla wszystkich uczestników. Rozumiem, jak ważna jest atmosfera podczas takich wydarzeń, dlatego zadbam o to, aby muzyka idealnie współgrała z charakterem imprezy, odzwierciedlając jej ducha i cele. Bez względu na to, czy organizujesz galę, konferencję, czy nieformalne spotkanie pracowników, moje doświadczenie i szeroki repertuar pozwalają na stworzenie idealnego klimatu.";
 
