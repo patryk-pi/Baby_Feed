@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $color-gray;
+    color: $color-primary;
 
     &__title {
         font-size: 4em;
