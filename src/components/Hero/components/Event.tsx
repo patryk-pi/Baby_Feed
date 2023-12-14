@@ -8,10 +8,15 @@ type EventProps = {
 const Event = ({ title, text1, text2, text3 }: EventProps) => {
     return (
         <section className="event">
-            <h3 className="event__title">{title}</h3>
-            <p className="event__text">{text1}</p>
-            {text2 && <p className="event__text">{text2}</p>}
-            {text3 && <p className="event__text">{text3}</p>}
+            <div className="event__title">
+                {" "}
+                <h3>{title}</h3>
+            </div>
+            <div className="event__text">
+                <p>{text1}</p>
+                {text2 && <p>{text2}</p>}
+                {text3 && <p>{text3}</p>}
+            </div>
         </section>
     );
 };
