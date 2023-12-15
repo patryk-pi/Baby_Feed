@@ -9,6 +9,7 @@ import {
     partyText,
 } from "@/constants/constants";
 import Event from "./components/Event";
+import Link from "next/link";
 
 const Hero = () => {
     return (
@@ -24,6 +25,9 @@ const Hero = () => {
                 <Event title={companyTitle} text1={companyText} />
                 <Event title={partyTitle} text1={partyText} />
             </div>
+            <Link href="/oferta" className="hero__button">
+                Zobacz ofertę
+            </Link>
         </section>
     );
 };
