@@ -11,6 +11,7 @@ import {
 import Event from "./components/Event";
 import Link from "next/link";
 import WeddingIcon from "./components/WeddingIcon";
+import PartyIcon from "./components/PartyIcon";
 
 const Hero = () => {
     return (
@@ -25,7 +26,7 @@ const Hero = () => {
                     text3={weddingText3}
                 />
                 <Event
-                    icon={<WeddingIcon />}
+                    icon={<PartyIcon />}
                     title={companyTitle}
                     text1={companyText}
                 />
