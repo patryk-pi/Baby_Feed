@@ -12,6 +12,7 @@ import Event from "./components/Event";
 import Link from "next/link";
 import WeddingIcon from "./components/WeddingIcon";
 import PartyIcon from "./components/PartyIcon";
+import BallonIcon from "./components/BallonIcon";
 
 const Hero = () => {
     return (
@@ -31,7 +32,7 @@ const Hero = () => {
                     text1={companyText}
                 />
                 <Event
-                    icon={<WeddingIcon />}
+                    icon={<BallonIcon />}
                     title={partyTitle}
                     text1={partyText}
                 />
