@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    transition: all 0.2s ease-in;
 
     &__title {
         font-size: 3rem;
@@ -54,5 +55,9 @@
         height: 20rem;
         width: auto;
         margin-bottom: 2rem;
+    }
+
+    &:hover {
+        transform: scale(1.05);
     }
 }
