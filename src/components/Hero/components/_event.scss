@@ -12,12 +12,12 @@
         color: $color-primary;
         border: 3px solid $color-white;
         border-radius: 20px;
-        padding: 1.5rem 2rem;
+        padding: 1.5rem 1rem;
         margin-bottom: 3rem;
-        box-shadow: 5px 10px 20px rgba(255, 255, 255, 0.4);
+        box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.4);
         width: 100%;
         text-align: center;
-
+        border: 10px solid $color-gray;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -33,7 +33,7 @@
         border-radius: 20px;
         padding: 2rem 4rem;
         margin-bottom: 3rem;
-        box-shadow: 5px 10px 20px rgba(255, 255, 255, 0.4);
+        box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.4);
         width: 100%;
         text-align: center;
         height: 100%;
@@ -41,6 +41,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border: 10px solid $color-gray;
 
         p {
             margin-bottom: 1.5rem;
@@ -49,7 +50,7 @@
     }
 
     &__icon {
-        fill: $color-white;
+        // fill: $color-white;
         height: 20rem;
         width: auto;
         margin-bottom: 2rem;

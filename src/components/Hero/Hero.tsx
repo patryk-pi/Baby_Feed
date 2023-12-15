@@ -1,8 +1,8 @@
 import {
     weddingTitle,
     weddingText1,
-    weddingText2,
-    weddingText3,
+    // weddingText2,
+    // weddingText3,
     companyTitle,
     companyText,
     partyTitle,
@@ -17,14 +17,14 @@ import BallonIcon from "./components/BallonIcon";
 const Hero = () => {
     return (
         <section className="hero">
-            <h1 className="hero__header">DJ na każdy event</h1>
+            <h1 className="hero__header">DJ na każdy event!</h1>
             <div className="hero__container">
                 <Event
                     icon={<WeddingIcon />}
                     title={weddingTitle}
                     text1={weddingText1}
-                    text2={weddingText2}
-                    text3={weddingText3}
+                    // text2={weddingText2}
+                    // text3={weddingText3}
                 />
                 <Event
                     icon={<PartyIcon />}

@@ -1,7 +1,7 @@
 const PartyIcon = () => {
     return (
         <svg
-            fill="#000000"
+            fill="#60c0f7"
             version="1.1"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"

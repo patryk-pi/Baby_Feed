@@ -3,10 +3,11 @@
     margin: 10rem auto 0;
 
     &__header {
-        font-size: 7rem;
+        font-size: 5rem;
         text-align: center;
         font-weight: 700;
         margin-bottom: 8rem;
+        letter-spacing: 1.8px;
     }
 
     &__container {
@@ -30,5 +31,14 @@
         border-radius: 20px;
         text-transform: capitalize;
         cursor: pointer;
+        transition: all 0.2s ease-in;
+        margin-bottom: 10rem;
+
+        &:hover {
+            scale: 1.2;
+            box-shadow: 0 10px 20px rgba($color: #ffffff, $alpha: 0.3);
+            background-color: $color-primary;
+            color: $color-white;
+        }
     }
 }

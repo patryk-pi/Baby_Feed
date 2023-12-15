@@ -6,9 +6,10 @@ type EventProps = {
     text1: string;
     text2?: string;
     text3?: string;
+    color?: string;
 };
 
-const Event = ({ icon, title, text1, text2, text3 }: EventProps) => {
+const Event = ({ icon, title, text1, text2, text3, color }: EventProps) => {
     return (
         <section className="event">
             {icon}
