@@ -1,13 +1,17 @@
+import { ReactElement, ReactNode } from "react";
+
 type EventProps = {
+    icon: ReactNode;
     title: string;
     text1: string;
     text2?: string;
     text3?: string;
 };
 
-const Event = ({ title, text1, text2, text3 }: EventProps) => {
+const Event = ({ icon, title, text1, text2, text3 }: EventProps) => {
     return (
         <section className="event">
+            {icon}
             <div className="event__title">
                 {" "}
                 <h3>{title}</h3>
