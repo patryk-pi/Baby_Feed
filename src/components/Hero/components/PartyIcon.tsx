@@ -8,7 +8,7 @@ const PartyIcon = () => {
             width="800px"
             height="800px"
             viewBox="0 0 260 260"
-            enable-background="new 0 0 260 260"
+            enableBackground="new 0 0 260 260"
             className="event__icon"
         >
             <path

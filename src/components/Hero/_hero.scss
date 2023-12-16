@@ -17,6 +17,15 @@
         margin-bottom: 8rem;
         margin-top: 10rem;
         letter-spacing: 1.8px;
+        background-color: $color-white;
+        padding: 3rem 6rem;
+        color: $color-primary;
+        border: 3px solid $color-white;
+        border-radius: 20px;
+        border: 10px solid $color-gray;
+        width: 70rem;
+        display: block;
+        margin: 10rem auto;
     }
 
     &__container {
