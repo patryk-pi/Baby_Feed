@@ -17,29 +17,31 @@ import BallonIcon from "./components/BallonIcon";
 const Hero = () => {
     return (
         <section className="hero">
-            <h1 className="hero__header">DJ na każdy event!</h1>
-            <div className="hero__container">
-                <Event
-                    icon={<WeddingIcon />}
-                    title={weddingTitle}
-                    text1={weddingText1}
-                    // text2={weddingText2}
-                    // text3={weddingText3}
-                />
-                <Event
-                    icon={<PartyIcon />}
-                    title={companyTitle}
-                    text1={companyText}
-                />
-                <Event
-                    icon={<BallonIcon />}
-                    title={partyTitle}
-                    text1={partyText}
-                />
+            <div className="hero__box">
+                <h1 className="hero__header">DJ na każdy event!</h1>
+                <div className="hero__container">
+                    <Event
+                        icon={<WeddingIcon />}
+                        title={weddingTitle}
+                        text1={weddingText1}
+                        // text2={weddingText2}
+                        // text3={weddingText3}
+                    />
+                    <Event
+                        icon={<PartyIcon />}
+                        title={companyTitle}
+                        text1={companyText}
+                    />
+                    <Event
+                        icon={<BallonIcon />}
+                        title={partyTitle}
+                        text1={partyText}
+                    />
+                </div>
+                <Link href="/oferta" className="hero__button">
+                    Zobacz ofertę
+                </Link>
             </div>
-            <Link href="/oferta" className="hero__button">
-                Zobacz ofertę
-            </Link>
         </section>
     );
 };

@@ -1,12 +1,21 @@
 .hero {
-    width: $container-width;
-    margin: 10rem auto 0;
+    background-image: linear-gradient(rgba(22, 26, 48, 0.8) 0%, #161a30 30%);
+    padding-top: 3rem;
+    border-top-left-radius: 12rem;
+    border-top-right-radius: 12rem;
+    padding-bottom: 10rem;
+
+    &__box {
+        width: $container-width;
+        margin: 10rem auto 0;
+    }
 
     &__header {
         font-size: 5rem;
         text-align: center;
         font-weight: 700;
         margin-bottom: 8rem;
+        margin-top: 10rem;
         letter-spacing: 1.8px;
     }
 
