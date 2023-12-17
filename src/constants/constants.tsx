@@ -1,6 +1,6 @@
 export const weddingTitle: string = "Wesela";
 export const weddingText1: string =
-    "Podczas organizacji wesela, wiem, że każdy szczegół musi być na jak najlepszym poziomie. Jako DJ wiem, że ta chwila jest dla Was najcenniejsza. Moim celem, jest zapewnienie Wam najlepszych wrażeń i obsługi.";
+    "Specjalizuję się w tworzeniu niezapomnianego klimatu na weselach, oferując spersonalizowany repertuar i indywidualne podejście do każdego elementu wieczoru. Moje zaangażowanie i kreatywność gwarantują, że każdy moment wesela będzie wyjątkowy, a muzyka idealnie dopełni Wasze wspomnienia z tego wyjątkowego dnia.";
 // export const weddingText2: string =
 //     "Dodatkowo, moja praca to nie tylko granie muzyki – to tworzenie niezapomnianego klimatu, który pozostanie z Wami na lata. Rozumiem, jak ważna jest indywidualność każdej pary, dlatego oferuję spersonalizowany repertuar i elastyczne podejście do każdego elementu wesela. Możecie liczyć na moją kreatywność, doświadczenie oraz zaangażowanie, aby każdy moment był wyjątkowy.";
 // export const weddingText3: string =
@@ -8,8 +8,8 @@ export const weddingText1: string =
 
 export const companyTitle: string = "Eventy firmowe";
 export const companyText: string =
-    "Planujesz event firmowy i chcesz, aby był wyjątkowy? Jako doświadczony DJ, oferuję nie tylko profesjonalną oprawę muzyczną, ale także gwarancję niezapomnianych wrażeń dla wszystkich uczestników. Rozumiem, jak ważna jest atmosfera podczas takich wydarzeń, dlatego zadbam o to, aby muzyka idealnie współgrała z charakterem imprezy, odzwierciedlając jej ducha i cele.";
+    "Zapewniam profesjonalną oprawę muzyczną i niezapomniane wrażenia dla każdego eventu firmowego. Dbam o to, by muzyka idealnie pasowała do charakteru imprezy, tworząc atmosferę, która odzwierciedla jej ducha i cele, niezależnie od rodzaju wydarzenia.";
 
 export const partyTitle: string = "Imprezy okolicznościowe";
 export const partyText: string =
-    "Planujesz urodziny, jubileusz, studniówkę, czy inną ważną okoliczność? Jako doświadczony DJ, zapewniam nie tylko profesjonalną oprawę muzyczną, ale również gwarancję wyjątkowych wrażeń dla Ciebie i Twoich gości. Rozumiem, że każda impreza okolicznościowa jest unikatowa i wymaga osobistego podejścia, dlatego do każdego wydarzenia podchodzę z pełnym zaangażowaniem, aby muzyka doskonale oddawała jego charakter i nastrój.";
+    "Każda ważna uroczystość – czy to urodziny, jubileusz czy studniówka – wymaga indywidualnego podejścia. Zapewniam, że wybierając mnie zostanie wzbogacona o dopasowaną muzycznie atmosferę. Moje doświadczenie pozwala na stworzenie idealnego tła dla każdego typu wydarzenia, zapewniając wyjątkowe wrażenia i pamiętne chwile dla wszystkich uczestników.";
