@@ -13,7 +13,7 @@ const Video = () => {
                 <Parallax
                     speed={-200}
                     style={{
-                        marginTop: "30rem",
+                        marginTop: "-6rem",
                     }}
                 >
                     <video autoPlay loop muted playsInline>
