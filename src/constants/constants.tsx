@@ -13,3 +13,10 @@ export const companyText: string =
 export const partyTitle: string = "Imprezy okolicznościowe";
 export const partyText: string =
     "Każda ważna uroczystość – czy to urodziny, jubileusz czy studniówka – wymaga indywidualnego podejścia. Zapewniam, że wybierając mnie zostanie wzbogacona o dopasowaną muzycznie atmosferę. Moje doświadczenie pozwala na stworzenie idealnego tła dla każdego typu wydarzenia, zapewniając wyjątkowe wrażenia i pamiętne chwile dla wszystkich uczestników.";
+
+export const aboutme: string =
+    "Cześć, nazywam się Daniel Jaworski. Swoją przygodę z muzyką zacząłem w wielu 17-lat i od tamtej pory, codziennie staram się rozwijać swoje zainteresowanie.";
+export const aboutTitle1: string = "Edukacja i Rozwój";
+export const aboutTitle2: string = "Moja Kariera w Radio, DJing i Komponowanie";
+export const aboutTitle3: string = "Moje doświadczenie sceniczne";
+export const aboutTitle4: string = "Rozwój Osobisty";
