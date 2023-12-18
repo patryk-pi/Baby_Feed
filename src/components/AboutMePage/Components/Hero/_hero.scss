@@ -1,0 +1,14 @@
+.abouthero {
+    &__container {
+        width: $container-width;
+        margin: 0 auto;
+    }
+
+    &__image {
+        height: 40rem;
+        width: auto;
+        border: 10px solid $color-gray;
+        border-radius: 20px;
+        transition: all 5s ease-in;
+    }
+}
