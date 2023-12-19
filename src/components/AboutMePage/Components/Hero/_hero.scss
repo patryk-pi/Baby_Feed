@@ -2,6 +2,8 @@
     &__container {
         width: $container-width;
         margin: 0 auto;
+        display: flex;
+        gap: 7rem;
     }
 
     &__image {
@@ -9,6 +11,20 @@
         width: auto;
         border: 10px solid $color-gray;
         border-radius: 20px;
-        transition: all 5s ease-in;
+    }
+
+    &__text {
+        border: 10px solid $color-gray;
+        border-radius: 20px;
+
+        padding: 2rem;
+        background-color: $color-white;
+        color: $color-primary;
+
+        .point {
+            &:not(:first-of-type) {
+                margin-top: 4rem;
+            }
+        }
     }
 }

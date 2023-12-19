@@ -1,0 +1,18 @@
+.point {
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 0.9px;
+        margin-bottom: 1rem;
+
+        &:not(:first-of-type) {
+            margin-top: 20rem;
+        }
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+}
