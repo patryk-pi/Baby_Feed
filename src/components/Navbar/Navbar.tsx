@@ -5,6 +5,7 @@ import Logo from "../Logo/Logo";
 import NavLink from "./components/NavLink";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
     const [hidden, setHidden] = useState(false);
@@ -27,12 +28,14 @@ const Navbar = () => {
     return (
         <section className={`navbar ${hidden && "hidden"}`}>
             <nav className="navbar__container">
-                <Image
-                    src={"/Logo.png"}
-                    height={100}
-                    width={100}
-                    alt="Jaworski Music Logo"
-                />
+                <Link href={"/"}>
+                    <Image
+                        src={"/Logo.png"}
+                        height={100}
+                        width={100}
+                        alt="Jaworski Music Logo"
+                    />
+                </Link>
                 <div className="navbar__links">
                     <NavLink title={"o mnie"} url={"/o-mnie"} />
                     <NavLink title={"oferta"} url={"/oferta"} />
