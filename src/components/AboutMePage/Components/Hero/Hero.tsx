@@ -13,6 +13,7 @@ const Hero = () => {
                     alt="Daniel Jaworski"
                     className="abouthero__image"
                 />
+                <div className="abouthero__text"></div>
             </div>
         </section>
     );
