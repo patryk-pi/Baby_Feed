@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <>
             <Navbar />
-            <Video />
+            <Video source={"/DJVid.mp4"} parallax={true} />
             <Hero />
             <Footer />
         </>

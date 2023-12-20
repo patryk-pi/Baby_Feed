@@ -6,7 +6,22 @@ import {
     ParallaxProvider,
 } from "react-scroll-parallax";
 
-const Video = () => {
+type VideoProps = {
+    source: string;
+    parallax: boolean;
+};
+
+const Video = ({ source, parallax }: VideoProps) => {
+    if (!parallax) {
+        return (
+            <section className="video">
+                <video autoPlay loop muted playsInline>
+                    <source src={source} type="video/mp4" />
+                </video>
+            </section>
+        );
+    }
+
     return (
         <ParallaxProvider>
             <section className="video">
@@ -17,7 +32,7 @@ const Video = () => {
                     }}
                 >
                     <video autoPlay loop muted playsInline>
-                        <source src="/DJVid.mp4" type="video/mp4" />
+                        <source src={source} type="video/mp4" />
                     </video>
                 </Parallax>
             </section>
