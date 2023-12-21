@@ -1,3 +1,5 @@
+"use client";
+
 import {
     weddingTitle,
     weddingText1,
@@ -8,6 +10,8 @@ import {
     partyTitle,
     partyText,
 } from "@/constants/constants";
+
+import { useRef, useEffect } from "react";
 import Event from "./components/Event";
 import Link from "next/link";
 import WeddingIcon from "./components/WeddingIcon";
@@ -15,10 +19,17 @@ import PartyIcon from "./components/PartyIcon";
 import BallonIcon from "./components/BallonIcon";
 
 const Hero = () => {
+    const myRef = useRef<HTMLHeadingElement>(null);
+
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver();
+    // }, []);
     return (
         <section className="hero">
             <div className="hero__box">
-                <h1 className="hero__header">DJ na każdy event!</h1>
+                <h1 className="hero__header" ref={myRef}>
+                    DJ na każdy event!
+                </h1>
                 <div className="hero__container">
                     <Event
                         icon={<WeddingIcon />}
