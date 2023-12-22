@@ -25,6 +25,14 @@
         width: 70rem;
         display: block;
         margin: 3rem auto 10rem;
+        transform: translateX(-60rem);
+        opacity: 0;
+        transition: 0.4s all ease-in;
+
+        &.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 
     &__container {
