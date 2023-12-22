@@ -26,10 +26,11 @@
     align-items: center;
     border-radius: 50%;
     border: 2px solid $color-gray;
-    background-color: $color-white;
+    background-color: rgba(255, 255, 255, 0.4);
     font-size: 4rem;
-    color: $color-primary;
+    color: $color-white;
     animation: arrow 2s infinite;
+    font-weight: 700;
 
     &.hidden {
         opacity: 0;

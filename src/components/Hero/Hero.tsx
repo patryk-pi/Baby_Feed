@@ -29,6 +29,7 @@ const Hero = () => {
                 <Title
                     state={isElementVisible}
                     setState={setIsElementVisible}
+                    id="heroHeader"
                 />
                 <div className="hero__container">
                     <Event
@@ -53,7 +54,11 @@ const Hero = () => {
                     Zobacz ofertę
                 </Link>
             </div>
-            <Arrow state={isElementVisible} setState={setIsElementVisible} />
+            <Arrow
+                id="heroHeader"
+                state={isElementVisible}
+                setState={setIsElementVisible}
+            />
         </section>
     );
 };
