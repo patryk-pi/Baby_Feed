@@ -1,0 +1,37 @@
+@keyframes arrow {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.arrow {
+    position: fixed;
+    bottom: 10vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in;
+    opacity: 1;
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid $color-gray;
+    background-color: $color-white;
+    font-size: 4rem;
+    color: $color-primary;
+    animation: arrow 2s infinite;
+
+    &.hidden {
+        opacity: 0;
+    }
+}

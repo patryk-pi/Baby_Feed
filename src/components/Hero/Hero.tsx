@@ -11,19 +11,25 @@ import {
     partyText,
 } from "@/constants/constants";
 
-import { useRef, useEffect, useState } from "react";
+import { useState } from "react";
 import Event from "./components/Event";
 import Link from "next/link";
 import WeddingIcon from "./components/WeddingIcon";
 import PartyIcon from "./components/PartyIcon";
 import BallonIcon from "./components/BallonIcon";
 import Title from "./components/Title";
+import Arrow from "../Arrow/Arrow";
 
 const Hero = () => {
+    const [isElementVisible, setIsElementVisible] = useState<boolean>(false);
+
     return (
         <section className="hero">
             <div className="hero__box">
-                <Title />
+                <Title
+                    state={isElementVisible}
+                    setState={setIsElementVisible}
+                />
                 <div className="hero__container">
                     <Event
                         icon={<WeddingIcon />}
@@ -47,6 +53,7 @@ const Hero = () => {
                     Zobacz ofertę
                 </Link>
             </div>
+            <Arrow state={isElementVisible} setState={setIsElementVisible} />
         </section>
     );
 };
