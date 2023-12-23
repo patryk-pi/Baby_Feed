@@ -5,8 +5,23 @@ type ArrowProps = {
 };
 
 const Arrow = ({ state, setState, id }: ArrowProps) => {
+    const handleClick = () => {
+        const offset = 100; // Adjust this value based on your requirements
+        const targetElement = document.getElementById(id);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - offset,
+                behavior: "smooth",
+            });
+        }
+    };
+
     return (
-        <section className={`${"arrow"} ${state ? "hidden" : ""}`}>
+        <section
+            className={`${"arrow"} ${state ? "hidden" : ""}`}
+            onClick={handleClick}
+        >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="arrow__icon"

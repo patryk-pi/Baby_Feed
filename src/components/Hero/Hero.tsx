@@ -24,7 +24,7 @@ const Hero = () => {
     const [isElementVisible, setIsElementVisible] = useState<boolean>(false);
 
     return (
-        <section className="hero">
+        <section className="hero" id="hero">
             <div className="hero__box">
                 <Title
                     state={isElementVisible}
@@ -55,7 +55,7 @@ const Hero = () => {
                 </Link>
             </div>
             <Arrow
-                id="heroHeader"
+                id="hero"
                 state={isElementVisible}
                 setState={setIsElementVisible}
             />
