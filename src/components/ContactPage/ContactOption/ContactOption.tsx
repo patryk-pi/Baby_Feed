@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 type ContactOptionProps = {
     icon: ReactNode;
-    text: string;
+    text?: string;
     link?: string;
 };
 
@@ -12,12 +12,10 @@ export type IconProps = {
 
 const ContactOption = ({ icon, text, link }: ContactOptionProps) => {
     return (
-        <div className="contactoption">
+        <a href={link} target="_blank" className="contactoption">
             {icon}
-            <a href={link} target="_blank">
-                {text}
-            </a>
-        </div>
+            {text && <p>{text}</p>}
+        </a>
     );
 };
 export default ContactOption;

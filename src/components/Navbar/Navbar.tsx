@@ -1,7 +1,5 @@
 "use client";
 
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
-import Logo from "../Logo/Logo";
 import NavLink from "./components/NavLink";
 import Image from "next/image";
 import { useEffect, useState } from "react";
