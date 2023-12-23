@@ -1,0 +1,20 @@
+.contactoption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__icon {
+        height: 5rem;
+        width: auto;
+        fill: $color-white;
+        margin-bottom: 2rem;
+    }
+
+    a {
+        font-size: 2rem;
+        letter-spacing: 0.8px;
+        text-decoration: none;
+        color: $color-white;
+    }
+}
