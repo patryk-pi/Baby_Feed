@@ -1,4 +1,3 @@
-import { text } from "stream/consumers";
 import ContactOption from "../ContactOption/ContactOption";
 import Envelope from "../Icons/Envelope";
 import Phone from "../Icons/Phone";
