@@ -22,14 +22,17 @@ import Arrow from "../Arrow/Arrow";
 
 const Hero = () => {
     const [isElementVisible, setIsElementVisible] = useState<boolean>(false);
+    const [isBelow, setIsBelow] = useState<boolean>(false);
 
     return (
         <section className="hero" id="hero">
             <div className="hero__box">
                 <Title
-                    state={isElementVisible}
-                    setState={setIsElementVisible}
+                    visible={isElementVisible}
+                    setVisible={setIsElementVisible}
                     id="heroHeader"
+                    below={isBelow}
+                    setBelow={setIsBelow}
                 />
                 <div className="hero__container">
                     <Event

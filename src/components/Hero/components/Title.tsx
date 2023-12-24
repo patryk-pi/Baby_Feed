@@ -1,18 +1,23 @@
+import { BlobOptions } from "buffer";
 import { useRef, useState, useEffect } from "react";
 
 type TitleProps = {
-    state: boolean;
-    setState: React.Dispatch<React.SetStateAction<boolean>>;
+    visible: boolean;
+    setVisible: React.Dispatch<React.SetStateAction<boolean>>;
     id: string;
+    below: boolean;
+    setBelow: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const Title = ({ state, setState, id }: TitleProps) => {
+const Title = ({ visible, setVisible, id, below, setBelow }: TitleProps) => {
     const myRef = useRef<HTMLHeadingElement>(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
-            setState(entry.isIntersecting);
+            setVisible(entry.isIntersecting);
+            setBelow(entry.boundingClientRect.top < 0 ? false : true);
+            console.log(below);
 
             if (entry.isIntersecting) {
                 observer?.disconnect();
@@ -29,7 +34,7 @@ const Title = ({ state, setState, id }: TitleProps) => {
     }, []);
     return (
         <h1
-            className={`${"hero__header"} ${state ? "visible" : ""}`}
+            className={`${"hero__header"} ${visible ? "visible" : ""}`}
             ref={myRef}
             id={id}
         >
