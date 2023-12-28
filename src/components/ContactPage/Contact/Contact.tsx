@@ -2,6 +2,7 @@ import ContactOption from "../ContactOption/ContactOption";
 import Envelope from "../Icons/Envelope";
 import Phone from "../Icons/Phone";
 import Instagram from "../Icons/Instagram";
+import ContactForm from "../ContactForm/ContactForm";
 
 const Contact = () => {
     return (
@@ -31,6 +32,7 @@ const Contact = () => {
                         link={"https://instagram.com/jaworskimusic"}
                     />
                 </div>
+                <ContactForm />
             </div>
         </section>
     );
