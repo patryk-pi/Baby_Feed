@@ -1,6 +1,14 @@
 import { useFormik } from "formik";
 
 const ContactForm = () => {
+    const serviceID = process.env.SERVICE_ID as string;
+    const templateID = process.env.TEMPLATE_ID as string;
+    const key = process.env.PUBLIC_KEY as string;
+
+    const sendEmail = (e: Event) => {
+        e.preventDefault;
+    };
+
     const formik = useFormik({
         initialValues: {
             name: "",
