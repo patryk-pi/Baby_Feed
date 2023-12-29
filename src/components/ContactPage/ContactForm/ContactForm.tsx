@@ -43,44 +43,48 @@ const ContactForm = () => {
         <section className="contactform">
             <form ref={form} onSubmit={formik.handleSubmit}>
                 <div className="contactform__container">
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        onChange={formik.handleChange}
-                        value={formik.values.name}
-                        placeholder="Imię"
-                        className="contactform__input"
-                    />
-                    <label className="contactform__label" htmlFor="name">
-                        Imię
-                    </label>
-
-                    <input
-                        type="text"
-                        id="email"
-                        name="email"
-                        onChange={formik.handleChange}
-                        value={formik.values.email}
-                        placeholder="Email"
-                        className="contactform__input"
-                    />
-                    <label className="contactform__label" htmlFor="email">
-                        Email
-                    </label>
-
-                    <input
-                        type="text"
-                        id="phone"
-                        name="phone"
-                        onChange={formik.handleChange}
-                        value={formik.values.phone}
-                        placeholder="Numer telefonu"
-                        className="contactform__input"
-                    />
-                    <label className="contactform__label" htmlFor="phone">
-                        Numer telefonu
-                    </label>
+                    <div>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            onChange={formik.handleChange}
+                            value={formik.values.name}
+                            placeholder="Imię"
+                            className="contactform__input"
+                        />
+                        <label className="contactform__label" htmlFor="name">
+                            Imię
+                        </label>
+                    </div>
+                    <div>
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            onChange={formik.handleChange}
+                            value={formik.values.email}
+                            placeholder="Email"
+                            className="contactform__input"
+                        />
+                        <label className="contactform__label" htmlFor="email">
+                            Email
+                        </label>
+                    </div>
+                    <div>
+                        <input
+                            type="text"
+                            id="phone"
+                            name="phone"
+                            onChange={formik.handleChange}
+                            value={formik.values.phone}
+                            placeholder="Numer telefonu"
+                            className="contactform__input"
+                        />
+                        <label className="contactform__label" htmlFor="phone">
+                            Numer telefonu
+                        </label>
+                    </div>
                 </div>
                 <div className="contactform__textarea">
                     <textarea
@@ -88,11 +92,11 @@ const ContactForm = () => {
                         id="message"
                         onChange={formik.handleChange}
                         value={formik.values.message}
-                        placeholder="Napisz wiadomość"
+                        placeholder="Wiadomość"
                         className="contactform__input"
                     ></textarea>
                     <label className="contactform__label" htmlFor="message">
-                        Napisz wiadomość
+                        Wiadomość
                     </label>
                 </div>
                 <button type="submit">Wyślij!</button>
