@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.11.0",
     "formik": "^2.4.5",
     "next": "14.0.3",
+    "next-recaptcha-v3": "^1.3.0",
     "react": "^18",
     "react-dom": "^18",
     "react-scroll-parallax": "^3.4.5",
