@@ -1,6 +1,6 @@
 "use client";
 
-import { useFormik } from "formik";
+import { useForm } from "react-hook-form";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -20,7 +20,6 @@ const ContactForm = () => {
                 .then(
                     (result) => {
                         console.log(result.text);
-                        formik.resetForm();
                     },
                     (error) => {
                         console.log(error.text);
@@ -29,27 +28,25 @@ const ContactForm = () => {
         }
     };
 
-    const formik = useFormik({
-        initialValues: {
-            name: "",
-            email: "",
-            phone: "",
-            message: "",
-        },
-        onSubmit: (values) => sendEmail(values),
-    });
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm();
 
     return (
         <section className="contactform">
-            <form ref={form} onSubmit={formik.handleSubmit}>
+            <form
+                ref={form}
+                onSubmit={handleSubmit((values) => sendEmail(values))}
+            >
                 <div className="contactform__container">
                     <div>
                         <input
+                            {...register("name")}
                             type="text"
                             id="name"
                             name="name"
-                            onChange={formik.handleChange}
-                            value={formik.values.name}
                             placeholder="Imię"
                             className="contactform__input"
                         />
@@ -59,11 +56,16 @@ const ContactForm = () => {
                     </div>
                     <div>
                         <input
+                            {...register("email", {
+                                required: "Pole wymagane",
+                                pattern: {
+                                    value: /\S+@\S+\.\S+/,
+                                    message: "Podaj maila",
+                                },
+                            })}
                             type="text"
                             id="email"
                             name="email"
-                            onChange={formik.handleChange}
-                            value={formik.values.email}
                             placeholder="Email"
                             className="contactform__input"
                         />
@@ -73,11 +75,10 @@ const ContactForm = () => {
                     </div>
                     <div>
                         <input
+                            {...register("phone")}
                             type="text"
                             id="phone"
                             name="phone"
-                            onChange={formik.handleChange}
-                            value={formik.values.phone}
                             placeholder="Numer telefonu"
                             className="contactform__input"
                         />
@@ -88,10 +89,9 @@ const ContactForm = () => {
                 </div>
                 <div className="contactform__textarea">
                     <textarea
+                        {...register("message")}
                         name="message"
                         id="message"
-                        onChange={formik.handleChange}
-                        value={formik.values.message}
                         placeholder="Wiadomość"
                         className="contactform__input"
                     ></textarea>
