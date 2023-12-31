@@ -63,7 +63,7 @@ const ContactForm = () => {
                                     message: "Podaj maila",
                                 },
                             })}
-                            type="text"
+                            type="email"
                             id="email"
                             name="email"
                             placeholder="Email"

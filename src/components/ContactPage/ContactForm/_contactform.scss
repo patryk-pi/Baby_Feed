@@ -47,6 +47,10 @@
         &::placeholder {
             font-family: "Montserrat", sans-serif;
         }
+
+        &:focus:invalid {
+            border-bottom: 3px solid red;
+        }
     }
 
     &__input:placeholder-shown + &__label {
