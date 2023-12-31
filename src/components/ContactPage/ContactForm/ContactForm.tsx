@@ -99,7 +99,9 @@ const ContactForm = () => {
                         Wiadomość
                     </label>
                 </div>
-                <button type="submit">Wyślij!</button>
+                <button className="contactform__button" type="submit">
+                    Wyślij!
+                </button>
             </form>
         </section>
     );
