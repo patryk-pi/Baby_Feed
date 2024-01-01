@@ -80,12 +80,19 @@ const ContactForm = () => {
                     </div>
                     <div>
                         <input
-                            {...register("phone")}
-                            type="number"
+                            {...register("phone", {
+                                required: "Pole wymagane",
+                                pattern: {
+                                    value: /^[0-9]*$/,
+                                    message: "Podaj maila",
+                                },
+                            })}
                             id="phone"
                             name="phone"
                             placeholder="Numer telefonu"
-                            className="contactform__input"
+                            className={`contactform__input ${
+                                errors && errors.phone ? "error" : ""
+                            }`}
                         />
                         <label className="contactform__label" htmlFor="phone">
                             Numer telefonu
