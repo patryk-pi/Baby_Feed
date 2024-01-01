@@ -35,22 +35,22 @@
     }
 
     &__input {
-        padding: 1.5rem 3rem;
+        padding: 1.5rem 2rem;
         border-radius: 25px;
         border: none;
         font-size: 1.5rem;
         letter-spacing: 0.8px;
         color: $color-primary;
         background: $color-white;
-        border-bottom: 3px solid transparent;
+        border: px solid transparent;
 
         &::placeholder {
             font-family: "Montserrat", sans-serif;
         }
 
         &.error {
-            background-color: rgba(255, 0, 0, 0.299);
-            color: $color-white;
+            // background-color: rgba(255, 0, 0, 0.299);
+            border: 3px solid rgb(193, 0, 0);
         }
     }
 
