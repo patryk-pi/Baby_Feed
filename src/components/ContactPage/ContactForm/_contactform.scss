@@ -48,8 +48,9 @@
             font-family: "Montserrat", sans-serif;
         }
 
-        &:focus:invalid {
-            border-bottom: 3px solid red;
+        &.error {
+            background-color: rgba(255, 0, 0, 0.299);
+            color: $color-white;
         }
     }
 

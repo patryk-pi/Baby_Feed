@@ -14,18 +14,20 @@ const ContactForm = () => {
     const sendEmail = (values: { [key: string]: string }) => {
         const { name, email, phone, message } = values;
 
-        if (form.current) {
-            emailjs
-                .sendForm(serviceID, templateID, form.current, publicKey)
-                .then(
-                    (result) => {
-                        console.log(result.text);
-                    },
-                    (error) => {
-                        console.log(error.text);
-                    }
-                );
-        }
+        console.log(values);
+
+        // if (form.current) {
+        //     emailjs
+        //         .sendForm(serviceID, templateID, form.current, publicKey)
+        //         .then(
+        //             (result) => {
+        //                 console.log(result.text);
+        //             },
+        //             (error) => {
+        //                 console.log(error.text);
+        //             }
+        //         );
+        // }
     };
 
     const {
@@ -59,24 +61,26 @@ const ContactForm = () => {
                             {...register("email", {
                                 required: "Pole wymagane",
                                 pattern: {
-                                    value: /\S+@\S+\.\S+/,
+                                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
                                     message: "Podaj maila",
                                 },
                             })}
-                            type="email"
                             id="email"
                             name="email"
                             placeholder="Email"
-                            className="contactform__input"
+                            className={`contactform__input ${
+                                errors && errors.email ? "error" : ""
+                            }`}
                         />
                         <label className="contactform__label" htmlFor="email">
                             Email
                         </label>
+                        {errors.email && <p className="error-message">LFDSD</p>}
                     </div>
                     <div>
                         <input
                             {...register("phone")}
-                            type="text"
+                            type="number"
                             id="phone"
                             name="phone"
                             placeholder="Numer telefonu"
