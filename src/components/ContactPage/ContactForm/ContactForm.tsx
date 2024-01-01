@@ -34,7 +34,9 @@ const ContactForm = () => {
         register,
         handleSubmit,
         formState: { errors },
-    } = useForm();
+    } = useForm({
+        mode: "onBlur",
+    });
 
     return (
         <section className="contactform">
@@ -75,7 +77,6 @@ const ContactForm = () => {
                         <label className="contactform__label" htmlFor="email">
                             Email
                         </label>
-                        {errors.email && <p className="error-message">LFDSD</p>}
                     </div>
                     <div>
                         <input
