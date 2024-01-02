@@ -7,15 +7,28 @@ type EventProps = {
     text2?: string;
     text3?: string;
     color?: string;
+    visible: boolean;
+    setVisible: React.Dispatch<React.SetStateAction<boolean>>;
+    number: number;
 };
 
-const Event = ({ icon, title, text1, text2, text3, color }: EventProps) => {
+const Event = ({
+    icon,
+    title,
+    text1,
+    text2,
+    text3,
+    color,
+    visible,
+    setVisible,
+    number,
+}: EventProps) => {
     const section = useRef<HTMLElement>(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
-            console.log(entries);
+            setVisible(entry.isIntersecting);
 
             if (entry.isIntersecting) {
                 observer?.disconnect();
@@ -25,10 +38,17 @@ const Event = ({ icon, title, text1, text2, text3, color }: EventProps) => {
         if (section.current) {
             observer.observe(section.current);
         }
+
+        return () => {
+            observer.disconnect();
+        };
     }, []);
 
     return (
-        <section className="event" ref={section}>
+        <section
+            className={`event event-${number} ${visible ? "visible" : ""}`}
+            ref={section}
+        >
             {icon}
             <div className="event__title">
                 {" "}

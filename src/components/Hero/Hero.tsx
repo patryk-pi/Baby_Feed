@@ -22,7 +22,9 @@ import Arrow from "../Arrow/Arrow";
 
 const Hero = () => {
     const [isElementVisible, setIsElementVisible] = useState<boolean>(false);
-    const [isEventVisible, setIsEventVisible] = useState<boolean>(false)
+    const [isEvent1Visible, setIsEvent1Visible] = useState<boolean>(false);
+    const [isEvent2Visible, setIsEvent2Visible] = useState<boolean>(false);
+    const [isEvent3Visible, setIsEvent3Visible] = useState<boolean>(false);
     const [isBelow, setIsBelow] = useState<boolean>(false);
 
     return (
@@ -40,6 +42,9 @@ const Hero = () => {
                         icon={<WeddingIcon />}
                         title={weddingTitle}
                         text1={weddingText1}
+                        visible={isEvent1Visible}
+                        setVisible={setIsEvent1Visible}
+                        number={1}
                         // text2={weddingText2}
                         // text3={weddingText3}
                     />
@@ -47,11 +52,17 @@ const Hero = () => {
                         icon={<PartyIcon />}
                         title={companyTitle}
                         text1={companyText}
+                        visible={isEvent2Visible}
+                        setVisible={setIsEvent2Visible}
+                        number={2}
                     />
                     <Event
                         icon={<BallonIcon />}
                         title={partyTitle}
                         text1={partyText}
+                        visible={isEvent3Visible}
+                        setVisible={setIsEvent3Visible}
+                        number={3}
                     />
                 </div>
                 <Link href="/oferta" className="hero__button">
