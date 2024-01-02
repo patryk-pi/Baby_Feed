@@ -35,7 +35,7 @@ const ContactForm = () => {
         handleSubmit,
         formState: { errors },
     } = useForm({
-        mode: "onBlur",
+        mode: "onChange",
     });
 
     return (
@@ -82,8 +82,10 @@ const ContactForm = () => {
                         <input
                             {...register("phone", {
                                 required: "Pole wymagane",
+                                minLength: 5,
                                 pattern: {
-                                    value: /^[0-9]*$/,
+                                    value: /^[0-9+]*$/,
+
                                     message: "Podaj maila",
                                 },
                             })}
