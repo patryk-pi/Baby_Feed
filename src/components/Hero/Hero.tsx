@@ -22,6 +22,7 @@ import Arrow from "../Arrow/Arrow";
 
 const Hero = () => {
     const [isElementVisible, setIsElementVisible] = useState<boolean>(false);
+    const [isEventVisible, setIsEventVisible] = useState<boolean>(false)
     const [isBelow, setIsBelow] = useState<boolean>(false);
 
     return (

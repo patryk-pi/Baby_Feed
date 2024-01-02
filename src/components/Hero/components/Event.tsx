@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from "react";
+import { ReactElement, ReactNode, useEffect, useRef } from "react";
 
 type EventProps = {
     icon: ReactNode;
@@ -10,8 +10,25 @@ type EventProps = {
 };
 
 const Event = ({ icon, title, text1, text2, text3, color }: EventProps) => {
+    const section = useRef<HTMLElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            console.log(entries);
+
+            if (entry.isIntersecting) {
+                observer?.disconnect();
+            }
+        });
+
+        if (section.current) {
+            observer.observe(section.current);
+        }
+    }, []);
+
     return (
-        <section className="event">
+        <section className="event" ref={section}>
             {icon}
             <div className="event__title">
                 {" "}
