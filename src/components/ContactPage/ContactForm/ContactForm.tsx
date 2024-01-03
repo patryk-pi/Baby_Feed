@@ -47,7 +47,14 @@ const ContactForm = () => {
                 <div className="contactform__container">
                     <div>
                         <input
-                            {...register("name")}
+                            {...register("name", {
+                                required: "Pole wymagane",
+                                minLength: 2,
+                                pattern: {
+                                    value: /^([a-zA-Z]+\s)*[a-zA-Z]+$/,
+                                    message: "Wpisz poprawne imię",
+                                },
+                            })}
                             type="text"
                             id="name"
                             name="name"
@@ -82,10 +89,9 @@ const ContactForm = () => {
                         <input
                             {...register("phone", {
                                 required: "Pole wymagane",
-                                minLength: 5,
+                                minLength: 9,
                                 pattern: {
                                     value: /^[0-9+]*$/,
-
                                     message: "Podaj maila",
                                 },
                             })}
@@ -103,7 +109,10 @@ const ContactForm = () => {
                 </div>
                 <div className="contactform__textarea">
                     <textarea
-                        {...register("message")}
+                        {...register("message", {
+                            required: "Pole wymagane",
+                            minLength: 20,
+                        })}
                         name="message"
                         id="message"
                         placeholder="Wiadomość"
