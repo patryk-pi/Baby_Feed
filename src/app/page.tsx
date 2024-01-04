@@ -8,7 +8,12 @@ const Home = () => {
     return (
         <>
             <Navbar />
-            <Video source={"/DJVid.mp4"} parallax={true} />
+            <Video
+                source={"/DJVid.mp4"}
+                parallax={true}
+                speed={-200}
+                marTop={"-6rem"}
+            />
             <Hero />
             <Footer />
         </>

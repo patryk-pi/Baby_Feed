@@ -9,9 +9,11 @@ import {
 type VideoProps = {
     source: string;
     parallax: boolean;
+    speed: number;
+    marTop?: string | number | undefined;
 };
 
-const Video = ({ source, parallax }: VideoProps) => {
+const Video = ({ source, parallax, speed, marTop }: VideoProps) => {
     if (!parallax) {
         return (
             <section className="video">
@@ -26,9 +28,9 @@ const Video = ({ source, parallax }: VideoProps) => {
         <ParallaxProvider>
             <section className="video">
                 <Parallax
-                    speed={-200}
+                    speed={speed}
                     style={{
-                        marginTop: "-6rem",
+                        marginTop: marTop,
                     }}
                 >
                     <video autoPlay loop muted playsInline>

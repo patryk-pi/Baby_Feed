@@ -7,7 +7,7 @@ const Home = () => {
         <>
             <Navbar />
             <Hero />
-            <Video source="/dyrygent.mp4" parallax={true} />
+            <Video source="/dyrygent.mp4" parallax={true} speed={-800} />
         </>
     );
 };
