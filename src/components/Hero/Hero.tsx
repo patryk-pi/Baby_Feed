@@ -73,6 +73,7 @@ const Hero = () => {
                 id="hero"
                 state={isElementVisible}
                 setState={setIsElementVisible}
+                isBelow={isBelow}
             />
         </section>
     );

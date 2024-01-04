@@ -16,8 +16,8 @@ const Title = ({ visible, setVisible, id, below, setBelow }: TitleProps) => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
             setVisible(entry.isIntersecting);
-            setBelow(entry.boundingClientRect.top < 0 ? false : true);
-            console.log(below);
+            console.log(entry.boundingClientRect.top);
+            setBelow(entry.boundingClientRect.top >= 0 ? true : false);
 
             if (entry.isIntersecting) {
                 observer?.disconnect();

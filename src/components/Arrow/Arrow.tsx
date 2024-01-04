@@ -2,9 +2,10 @@ type ArrowProps = {
     state: boolean;
     setState: React.Dispatch<React.SetStateAction<boolean>>;
     id: string;
+    isBelow: boolean;
 };
 
-const Arrow = ({ state, setState, id }: ArrowProps) => {
+const Arrow = ({ state, setState, id, isBelow }: ArrowProps) => {
     const handleClick = () => {
         const offset = 100; // Adjust this value based on your requirements
         const targetElement = document.getElementById(id);
@@ -19,7 +20,9 @@ const Arrow = ({ state, setState, id }: ArrowProps) => {
 
     return (
         <section
-            className={`${"arrow"} ${state ? "hidden" : ""}`}
+            className={`${"arrow"} ${
+                state === true || isBelow === false ? "hidden" : ""
+            }`}
             onClick={handleClick}
         >
             <svg
