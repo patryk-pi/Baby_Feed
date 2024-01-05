@@ -19,7 +19,7 @@ const Navbar = () => {
             if (currentScrollPosition < previousScrollPosition)
                 setHidden(false);
 
-            previousScrollPosition = currentScrollPosition;
+
         });
     }, []);
 
