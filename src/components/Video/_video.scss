@@ -4,7 +4,20 @@
     z-index: -1;
     position: relative;
 
+    &__container {
+        position: relative;
+        height: 100vh;
+        // border: 10px solid red;
+
+        // overflow-y: hidden; /* Hide vertical overflow at the bottom */
+    }
+
     video {
-        width: 100%;
+        width: 100vw;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -0.9rem;
     }
 }
