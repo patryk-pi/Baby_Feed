@@ -12,7 +12,6 @@ import {
     experienceArray,
     developmentArray,
 } from "@/constants/constants";
-import { ParallaxProvider } from "react-scroll-parallax";
 
 const Hero = () => {
     return (

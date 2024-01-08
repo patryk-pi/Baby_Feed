@@ -18,8 +18,6 @@ const Navbar = () => {
             if (currentScrollPosition > previousScrollPosition) setHidden(true);
             if (currentScrollPosition < previousScrollPosition)
                 setHidden(false);
-
-
         });
     }, []);
 
@@ -37,7 +35,7 @@ const Navbar = () => {
                 <div className="navbar__links">
                     <NavLink title={"o mnie"} url={"/o-mnie"} />
                     <NavLink title={"oferta"} url={"/oferta"} />
-                    <NavLink title={"galeria"} url={"/galeria"} />
+                    {/* <NavLink title={"galeria"} url={"/galeria"} /> */}
                     <NavLink title={"kontakt"} url={"/kontakt"} />
                 </div>
             </nav>
