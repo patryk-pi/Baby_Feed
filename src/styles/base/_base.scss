@@ -13,34 +13,41 @@
 // }
 
 html {
-    font-size: 62.5%;
+    // font-size: 62.5%;
+    font-size: 10px;
     font-family: "Montserrat", sans-serif;
     -webkit-text-size-adjust: none;
     color: $color-white;
 
-    //   @include xxl {
-    //     font-size: 55%;
-    //   }
+    @include xxl {
+        // font-size: 55%;
+        font-size: 9px;
+    }
 
-    //   @include xl {
-    //     font-size: 50%;
-    //   }
+    @include xl {
+        // font-size: 50%;
+        font-size: 8px;
+    }
 
-    //   @include l {
-    //     font-size: 45%;
-    //   }
+    @include l {
+        // font-size: 45%;
+        font-size: 7px;
+    }
 
-    //   @include m {
-    //     font-size: 40%;
-    //   }
+    @include m {
+        // font-size: 40%;
+        font-size: 6px;
+    }
 
-    //   @include s {
-    //     font-size: 35%;
-    //   }
+    @include s {
+        // font-size: 35%;
+        font-size: 5px;
+    }
 
-    //   @include xs {
-    //     font-size: 30%;
-    //   }
+    // @include xs {
+    //     // font-size: 30%;
+    //     font-size: 4px;
+    // }
 
     //   @include mobileXL {
     //     font-size: 62.5%;

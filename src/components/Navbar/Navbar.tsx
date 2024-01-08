@@ -18,6 +18,8 @@ const Navbar = () => {
             if (currentScrollPosition > previousScrollPosition) setHidden(true);
             if (currentScrollPosition < previousScrollPosition)
                 setHidden(false);
+
+            previousScrollPosition = currentScrollPosition;
         });
     }, []);
 
@@ -30,6 +32,7 @@ const Navbar = () => {
                         height={100}
                         width={100}
                         alt="Jaworski Music Logo"
+                        className="navbar__logo"
                     />
                 </Link>
                 <div className="navbar__links">
