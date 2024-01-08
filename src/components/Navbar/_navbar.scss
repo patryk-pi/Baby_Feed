@@ -38,10 +38,13 @@
     }
 
     &__links {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        justify-content: center;
         color: $color-primary;
+
+        ul {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            justify-content: center;
+        }
     }
 }
