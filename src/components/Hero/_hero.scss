@@ -43,6 +43,10 @@
         gap: 6rem;
     }
 
+    &__eventbox {
+        flex-basis: 33.333%;
+    }
+
     &__button {
         display: block;
         padding: 3rem 6rem;
