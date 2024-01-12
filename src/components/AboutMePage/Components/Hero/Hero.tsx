@@ -16,7 +16,7 @@ import {
 const Hero = () => {
     return (
         <section className="abouthero">
-            <Title />
+            <Title header="O mnie" />
             <div className="abouthero__container">
                 <Image
                     src={"/profilowe.jpeg"}

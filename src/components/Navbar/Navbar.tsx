@@ -18,6 +18,7 @@ const Navbar = () => {
             if (currentScrollPosition > previousScrollPosition) setHidden(true);
             if (currentScrollPosition < previousScrollPosition)
                 setHidden(false);
+            if (this.window.scrollY === 0) setHidden(false);
 
             previousScrollPosition = currentScrollPosition;
         });
