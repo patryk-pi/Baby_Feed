@@ -1,11 +1,13 @@
 import Title from "../AboutMePage/Components/Title/Title";
 import OfferText from "./Components/OfferText";
+import OfferBox from "./Components/OfferBox";
 
 import {
     offerHeader1,
     offerHeader2,
     offerParagraph1,
     offerParagraph2,
+    offers,
 } from "@/constants/constants";
 
 const Offer = () => {
@@ -15,6 +17,13 @@ const Offer = () => {
                 <Title header="Oferta" />
                 <OfferText header={offerHeader1} paragraph={offerParagraph1} />
                 <OfferText header={offerHeader2} paragraph={offerParagraph2} />
+                {offers.map((offer, index) => (
+                    <OfferBox
+                        key={index}
+                        offerName={offer.offerName}
+                        offerDetails={offer.offerDetails}
+                    />
+                ))}
             </div>
         </section>
     );

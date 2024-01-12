@@ -49,3 +49,74 @@ export const offerParagraph1: string =
 export const offerHeader2: string = "Wybierz Swoją Opcję";
 export const offerParagraph2: string =
     "Każdy z pakietów został zaprojektowany, aby sprostać różnym wymaganiom i budżetom. Niezależnie od tego, czy planujesz małą imprezę rodzinną, czy wielkie wydarzenie firmowe, mam ofertę idealną dla Ciebie. Zapraszam do skontaktowania się ze mną, abyśmy mogli wspólnie wybrać pakiet, który najlepiej odpowiada potrzebom Twojego wydarzenia. Razem sprawimy, że Twoja impreza będzie muzycznie niezapomniana!";
+
+export const offerName1: string = "Pakiet Standard";
+export const offerName2: string = "Pakiet Komfort";
+export const offerName3: string = "Pakiet Premium";
+export const offerName4: string = "Pakiet Luksusowy";
+
+const offerDetail1: string = "DJ/Konferansjer";
+const offerDetail2: string = "Nagłośnienie oraz oświetlenie";
+const offerDetail3: string = "Szeroka gama utworów";
+const offerDetail4: string = "Mała wytwornica dymu";
+const offerDetail5: string = "Ciężki dym";
+const offerDetail6: string = "Wyposażenie na zabawy";
+const offerDetail7: string = "Dodatkowe wyposażenie na zabawy";
+const offerDetail8: string = "2 fontanny iskier";
+const offerDetail9: string = "Pistolet CO2";
+const offerDetail10: string = "2 wyrzutnie ognia";
+const offerDetail11: string = "Profesjonalne nagłośnienie i oświetlenie";
+
+export const offerDetails1 = [
+    offerDetail1,
+    offerDetail2,
+    offerDetail3,
+    offerDetail4,
+];
+
+export const offerDetails2 = [
+    offerDetail1,
+    offerDetail2,
+    offerDetail3,
+    offerDetail4,
+    offerDetail6,
+];
+
+export const offerDetails3 = [
+    offerDetail1,
+    offerDetail11,
+    offerDetail3,
+    offerDetail5,
+    offerDetail7,
+    offerDetail8,
+];
+
+export const offerDetails4 = [
+    offerDetail1,
+    offerDetail11,
+    offerDetail3,
+    offerDetail5,
+    offerDetail7,
+    offerDetail8,
+    offerDetail9,
+    offerDetail10,
+];
+
+export const offers = [
+    {
+        offerName: offerName1,
+        offerDetails: offerDetails1,
+    },
+    {
+        offerName: offerName2,
+        offerDetails: offerDetails2,
+    },
+    {
+        offerName: offerName3,
+        offerDetails: offerDetails3,
+    },
+    {
+        offerName: offerName4,
+        offerDetails: offerDetails4,
+    },
+];
