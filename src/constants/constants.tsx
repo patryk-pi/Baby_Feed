@@ -40,3 +40,12 @@ export const experienceArray: string[] = [experience1];
 const development1: string =
     "Praca w stresie i pod presją czasu to dla mnie kolejne okazje do rozwijania odporności i efektywności. W poprzednich miejscach pracy jako muzyka, ceniono mnie za zaangażowanie, organizację i umiejętność pracy w zespole – umiejętności, które ciągle doskonalę. Z zaangażowaniem i profesjonalizmem podchodzę do każdego nowego projektu. Serdecznie zapraszam do współpracy, aby razem tworzyć imprezy, o których pamięć pozostanie na długi czas!";
 export const developmentArray: string[] = [development1];
+
+export const offerHeader1: string =
+    "Wybierz Pakiet, Który Najlepiej Pasuje do Twojego Wydarzenia";
+export const offerParagraph1: string =
+    "Rozumiem, jak ważne jest, aby muzyka na Twojej imprezie była dopasowana idealnie do jej charakteru i Twoich oczekiwań. Dlatego przygotowałem różnorodne pakiety ofertowe, które spełnią potrzeby każdej imprezy, niezależnie od jej wielkości i rodzaju. Każdy pakiet został starannie zaprojektowany, aby zapewnić najlepszą jakość dźwięku, światła i atmosfery, dostosowane do Twoich indywidualnych potrzeb.";
+
+export const offerHeader2: string = "Wybierz Swoją Opcję";
+export const offerParagraph2: string =
+    "Każdy z pakietów został zaprojektowany, aby sprostać różnym wymaganiom i budżetom. Niezależnie od tego, czy planujesz małą imprezę rodzinną, czy wielkie wydarzenie firmowe, mam ofertę idealną dla Ciebie. Zapraszam do skontaktowania się ze mną, abyśmy mogli wspólnie wybrać pakiet, który najlepiej odpowiada potrzebom Twojego wydarzenia. Razem sprawimy, że Twoja impreza będzie muzycznie niezapomniana!";
