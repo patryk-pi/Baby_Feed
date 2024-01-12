@@ -50,10 +50,10 @@ export const offerHeader2: string = "Wybierz Swoją Opcję";
 export const offerParagraph2: string =
     "Każdy z pakietów został zaprojektowany, aby sprostać różnym wymaganiom i budżetom. Niezależnie od tego, czy planujesz małą imprezę rodzinną, czy wielkie wydarzenie firmowe, mam ofertę idealną dla Ciebie. Zapraszam do skontaktowania się ze mną, abyśmy mogli wspólnie wybrać pakiet, który najlepiej odpowiada potrzebom Twojego wydarzenia. Razem sprawimy, że Twoja impreza będzie muzycznie niezapomniana!";
 
-export const offerName1: string = "Pakiet Standard";
-export const offerName2: string = "Pakiet Komfort";
-export const offerName3: string = "Pakiet Premium";
-export const offerName4: string = "Pakiet Luksusowy";
+export const offerName1: string = "Standard";
+export const offerName2: string = "Komfort";
+export const offerName3: string = "Premium";
+export const offerName4: string = "Luksusowy";
 
 const offerDetail1: string = "DJ/Konferansjer";
 const offerDetail2: string = "Nagłośnienie oraz oświetlenie";

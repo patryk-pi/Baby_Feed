@@ -17,13 +17,15 @@ const Offer = () => {
                 <Title header="Oferta" />
                 <OfferText header={offerHeader1} paragraph={offerParagraph1} />
                 <OfferText header={offerHeader2} paragraph={offerParagraph2} />
-                {offers.map((offer, index) => (
-                    <OfferBox
-                        key={index}
-                        offerName={offer.offerName}
-                        offerDetails={offer.offerDetails}
-                    />
-                ))}
+                <div className="offer__boxcontainer">
+                    {offers.map((offer, index) => (
+                        <OfferBox
+                            key={index}
+                            offerName={offer.offerName}
+                            offerDetails={offer.offerDetails}
+                        />
+                    ))}
+                </div>
             </div>
         </section>
     );
