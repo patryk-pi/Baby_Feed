@@ -1,9 +1,10 @@
 type OfferBoxProps = {
     offerName: string;
     offerDetails: string[];
+    label: boolean;
 };
 
-const OfferBox = ({ offerName, offerDetails }: OfferBoxProps) => {
+const OfferBox = ({ offerName, offerDetails, label }: OfferBoxProps) => {
     return (
         <section className="offer__box">
             <h4>{offerName}</h4>
@@ -14,6 +15,7 @@ const OfferBox = ({ offerName, offerDetails }: OfferBoxProps) => {
                     </li>
                 ))}
             </ul>
+            {label && <div className="offer__label">BESTSELLER</div>}
         </section>
     );
 };

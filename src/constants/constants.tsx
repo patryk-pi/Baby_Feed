@@ -106,17 +106,21 @@ export const offers = [
     {
         offerName: offerName1,
         offerDetails: offerDetails1,
+        label: false,
     },
     {
         offerName: offerName2,
         offerDetails: offerDetails2,
+        label: false,
     },
     {
         offerName: offerName3,
         offerDetails: offerDetails3,
+        label: true,
     },
     {
         offerName: offerName4,
         offerDetails: offerDetails4,
+        label: false,
     },
 ];

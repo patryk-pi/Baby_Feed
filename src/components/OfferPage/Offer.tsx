@@ -23,6 +23,7 @@ const Offer = () => {
                             key={index}
                             offerName={offer.offerName}
                             offerDetails={offer.offerDetails}
+                            label={offer.label}
                         />
                     ))}
                 </div>

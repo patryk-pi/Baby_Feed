@@ -23,7 +23,7 @@
             width: 80%;
             font-size: 3.5rem;
             line-height: 1.3;
-            font-weight: 700;
+            font-weight: 600;
             letter-spacing: 1.5px;
             margin: 0 auto 1.5rem;
         }
@@ -38,11 +38,45 @@
     &__box {
         border: 10px solid $color-gray;
         border-radius: 20px;
-        padding: 4rem;
+        padding: 4rem 2rem;
         font-size: 2rem;
         width: 100%;
         text-align: center;
         color: $color-primary;
         background-color: $color-white;
+        position: relative;
+        overflow: hidden;
+
+        h4 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            padding-bottom: 3rem;
+            border-bottom: 3px solid $color-secondary;
+        }
+
+        &-list {
+            margin-top: 3rem;
+
+            li {
+                font-weight: 500;
+                letter-spacing: 1px;
+                &:not(:last-of-type) {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    &__label {
+        position: absolute;
+        background-color: rgb(205, 174, 1);
+        color: $color-white;
+        padding: 2rem 5rem;
+        transform: rotate(-45deg);
+        letter-spacing: 1.7px;
+        left: 9rem;
+        bottom: 3rem;
+        font-weight: 600;
     }
 }
