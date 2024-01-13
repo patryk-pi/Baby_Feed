@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+
 type OfferBoxProps = {
     offerName: string;
     offerDetails: string[];
@@ -5,6 +9,15 @@ type OfferBoxProps = {
 };
 
 const OfferBox = ({ offerName, offerDetails, label }: OfferBoxProps) => {
+    const offer = useRef<HTMLElement>(null);
+    const [visible, setVisible] = useState<boolean>(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+        });
+    });
+
     return (
         <section className="offer__box">
             <h4>{offerName}</h4>
