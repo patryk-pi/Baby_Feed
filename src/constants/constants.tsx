@@ -56,7 +56,7 @@ export const offerName3: string = "Premium";
 export const offerName4: string = "Luksusowy";
 
 const offerDetail1: string = "DJ/Konferansjer";
-const offerDetail2: string = "Nagłośnienie oraz oświetlenie";
+const offerDetail2: string = "Profesjonalne nagłośnienie i oświetlenie";
 const offerDetail3: string = "Szeroka gama utworów";
 const offerDetail4: string = "Mała wytwornica dymu";
 const offerDetail5: string = "Ciężki dym";
@@ -65,7 +65,6 @@ const offerDetail7: string = "Dodatkowe wyposażenie na zabawy";
 const offerDetail8: string = "2 fontanny iskier";
 const offerDetail9: string = "Pistolet CO2";
 const offerDetail10: string = "2 wyrzutnie ognia";
-const offerDetail11: string = "Profesjonalne nagłośnienie i oświetlenie";
 
 export const offerDetails1 = [
     offerDetail1,
@@ -84,22 +83,12 @@ export const offerDetails2 = [
 
 export const offerDetails3 = [
     offerDetail1,
-    offerDetail11,
-    offerDetail3,
-    offerDetail5,
-    offerDetail7,
-    offerDetail8,
-];
-
-export const offerDetails4 = [
-    offerDetail1,
-    offerDetail11,
+    offerDetail2,
     offerDetail3,
     offerDetail5,
     offerDetail7,
     offerDetail8,
     offerDetail9,
-    offerDetail10,
 ];
 
 export const offers = [
@@ -111,16 +100,11 @@ export const offers = [
     {
         offerName: offerName2,
         offerDetails: offerDetails2,
-        label: false,
+        label: true,
     },
     {
         offerName: offerName3,
         offerDetails: offerDetails3,
-        label: true,
-    },
-    {
-        offerName: offerName4,
-        offerDetails: offerDetails4,
         label: false,
     },
 ];
