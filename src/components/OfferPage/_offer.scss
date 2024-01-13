@@ -2,12 +2,14 @@
     &__container {
         width: $container-width;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
     }
 
     &__boxcontainer {
         display: flex;
         flex: 0 1 auto;
-        gap: 4rem;
+        gap: 6rem;
         justify-content: space-between;
         margin-bottom: 10rem;
 
@@ -46,6 +48,7 @@
         background-color: $color-white;
         position: relative;
         overflow: hidden;
+        box-shadow: 0px 0px 10px 5px $color-white;
 
         h4 {
             font-size: 3rem;
@@ -75,8 +78,31 @@
         padding: 2rem 5rem;
         transform: rotate(-45deg);
         letter-spacing: 1.7px;
-        left: 20rem;
+        left: 18.5rem;
         bottom: 3rem;
         font-weight: 600;
+    }
+
+    &__btn {
+        text-decoration: none;
+        display: inline-block;
+        color: $color-primary;
+        margin: 0 auto;
+        background-color: $color-white;
+        border: 10px solid $color-gray;
+        font-size: 3.5rem;
+        padding: 2rem 5rem;
+        border-radius: 20px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        margin-bottom: 10rem;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            box-shadow: 0px 0px 20px 5px $color-white;
+            transform: scale(1.05);
+            background: $color-secondary;
+            color: $color-white;
+        }
     }
 }

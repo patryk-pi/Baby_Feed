@@ -9,6 +9,7 @@ import {
     offerParagraph2,
     offers,
 } from "@/constants/constants";
+import Link from "next/link";
 
 const Offer = () => {
     return (
@@ -27,6 +28,9 @@ const Offer = () => {
                         />
                     ))}
                 </div>
+                <Link href={"/kontakt"} className="offer__btn">
+                    Zapytaj o ofertę!
+                </Link>
             </div>
         </section>
     );
