@@ -4,19 +4,36 @@
     z-index: -1;
     position: relative;
 
+    @include mobileXL {
+        display: none;
+    }
+
     &__container {
         position: relative;
-        height: 100vh;
+        height: calc((12 / 16) * 100vw);
         min-height: -webkit-fill-available;
         // overflow-y: hidden; /* Hide vertical overflow at the bottom */
+
+        @include mobileXL {
+            height: auto;
+            margin-bottom: 10rem;
+        }
     }
 
     video {
         width: 100vw;
         height: auto;
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 0;
         // margin-bottom: -0.9rem;
+    }
+
+    &__mobile {
+        display: none;
+
+        @include mobileXL {
+            display: block;
+        }
     }
 }

@@ -22,6 +22,7 @@ html {
     @include xxl {
         // font-size: 55%;
         font-size: 9px;
+        width: 100vw;
     }
 
     @include xl {
@@ -44,30 +45,30 @@ html {
         font-size: 5px;
     }
 
-    // @include xs {
-    //     // font-size: 30%;
-    //     font-size: 4px;
-    // }
+    @include xs {
+        // font-size: 30%;
+        font-size: 4px;
+    }
 
-    //   @include mobileXL {
-    //     font-size: 62.5%;
-    //   }
+    @include mobileXL {
+        font-size: 62.5%;
+    }
 
-    //   @include mobileL {
-    //     font-size: 55%;
-    //   }
+    @include mobileL {
+        font-size: 55%;
+    }
 
-    //   @include mobileM {
-    //     font-size: 50%;
-    //   }
+    @include mobileM {
+        font-size: 50%;
+    }
 
-    //   @include mobileS {
-    //     font-size: 42%;
-    //   }
+    @include mobileS {
+        font-size: 42%;
+    }
 
-    //   @include mobileXS {
-    //     font-size: 35%;
-    //   }
+    @include mobileXS {
+        font-size: 35%;
+    }
 }
 
 body {

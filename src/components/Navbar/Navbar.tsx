@@ -50,6 +50,11 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
+                <div className="navbar__mobile">
+                    <span className="navbar__line"></span>
+                    <span className="navbar__line"></span>
+                    <span className="navbar__line"></span>
+                </div>
             </nav>
         </section>
     );

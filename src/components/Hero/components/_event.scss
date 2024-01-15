@@ -8,6 +8,12 @@
     opacity: 0;
     visibility: hidden;
 
+    @include mobileXL {
+        width: 60rem;
+        margin: 0 auto;
+        height: 80rem;
+    }
+
     &-1 {
         transition: 1s 0.2s all;
     }

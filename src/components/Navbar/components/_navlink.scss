@@ -9,9 +9,9 @@
     letter-spacing: 1px;
     transition: all 0.3s ease-in;
     padding: 1rem 3rem;
-    border-bottom: 1px solid transparent;
+    border-bottom: 3px solid transparent;
 
     &:hover {
-        border-bottom: 1px solid $color-white;
+        border-bottom: 3px solid $color-secondary;
     }
 }

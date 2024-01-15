@@ -15,13 +15,7 @@ type VideoProps = {
     targetElement?: HTMLElement;
 };
 
-const Video = ({
-    source,
-    parallax,
-    speed,
-    marTop,
-    targetElement,
-}: VideoProps) => {
+const Video = ({ source, parallax, speed, marTop }: VideoProps) => {
     if (!parallax) {
         return (
             <section className="video">
@@ -47,6 +41,13 @@ const Video = ({
                         </video>
                     </div>
                 </Parallax>
+            </section>
+            <section className="video__mobile">
+                <div className="video__container">
+                    <video autoPlay loop muted playsInline>
+                        <source src={source} type="video/mp4" />
+                    </video>
+                </div>
             </section>
         </ParallaxProvider>
     );
