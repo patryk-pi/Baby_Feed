@@ -8,11 +8,32 @@
         display: none;
     }
 
+    &__mobile {
+        display: none;
+
+        @include mobileXL {
+            display: block;
+            width: 100vw;
+            height: auto;
+            margin-bottom: 12rem;
+        }
+    }
+
     &__container {
         position: relative;
         height: calc((12 / 16) * 100vw);
         min-height: -webkit-fill-available;
         // overflow-y: hidden; /* Hide vertical overflow at the bottom */
+
+        @include mobileXL {
+            display: none;
+        }
+
+        &-mobile {
+            position: relative;
+            height: auto;
+            // min-height: -webkit-fill-available;
+        }
     }
 
     video {
@@ -22,13 +43,5 @@
         top: 0;
         left: 0;
         // margin-bottom: -0.9rem;
-    }
-
-    &__mobile {
-        display: none;
-
-        @include mobileXL {
-            display: block;
-        }
     }
 }

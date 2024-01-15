@@ -51,23 +51,23 @@ html {
     }
 
     @include mobileXL {
-        font-size: 62.5%;
+        font-size: 10px;
     }
 
     @include mobileL {
-        font-size: 55%;
+        font-size: 9px;
     }
 
     @include mobileM {
-        font-size: 50%;
+        font-size: 8.5px;
     }
 
     @include mobileS {
-        font-size: 42%;
+        font-size: 8px;
     }
 
     @include mobileXS {
-        font-size: 35%;
+        font-size: 7px;
     }
 }
 

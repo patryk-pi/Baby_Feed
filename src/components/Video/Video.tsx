@@ -43,7 +43,7 @@ const Video = ({ source, parallax, speed, marTop }: VideoProps) => {
                 </Parallax>
             </section>
             <section className="video__mobile">
-                <div className="video__container">
+                <div className="video__container-mobile">
                     <video autoPlay loop muted playsInline>
                         <source src={source} type="video/mp4" />
                     </video>
