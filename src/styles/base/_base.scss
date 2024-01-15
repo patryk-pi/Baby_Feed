@@ -59,15 +59,15 @@ html {
     }
 
     @include mobileM {
-        font-size: 8.5px;
-    }
-
-    @include mobileS {
         font-size: 8px;
     }
 
-    @include mobileXS {
+    @include mobileS {
         font-size: 7px;
+    }
+
+    @include mobileXS {
+        font-size: 6px;
     }
 }
 
