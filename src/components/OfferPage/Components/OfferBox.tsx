@@ -6,20 +6,50 @@ type OfferBoxProps = {
     offerName: string;
     offerDetails: string[];
     label: boolean;
+    boxNumber: number;
 };
 
-const OfferBox = ({ offerName, offerDetails, label }: OfferBoxProps) => {
+const OfferBox = ({
+    offerName,
+    offerDetails,
+    label,
+    boxNumber,
+}: OfferBoxProps) => {
     const offer = useRef<HTMLElement>(null);
     const [visible, setVisible] = useState<boolean>(false);
 
     useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            const entry = entries[0];
-        });
-    });
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const entry = entries[0];
+
+                setVisible(entry.isIntersecting);
+
+                if (entry.isIntersecting) {
+                    observer?.disconnect();
+                }
+            },
+            {
+                threshold: 0.3,
+            }
+        );
+
+        if (offer.current) {
+            observer.observe(offer.current);
+        }
+
+        return () => {
+            observer.disconnect();
+        };
+    }, []);
 
     return (
-        <section className="offer__box">
+        <section
+            ref={offer}
+            className={`offer__box offer__box-${boxNumber} ${
+                visible ? "visible" : ""
+            }`}
+        >
             <h4>{offerName}</h4>
             <ul className="offer__box-list">
                 {offerDetails.map((element, index) => (

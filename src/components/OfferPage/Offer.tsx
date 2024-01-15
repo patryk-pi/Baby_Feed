@@ -22,6 +22,7 @@ const Offer = () => {
                     {offers.map((offer, index) => (
                         <OfferBox
                             key={index}
+                            boxNumber={index + 1}
                             offerName={offer.offerName}
                             offerDetails={offer.offerDetails}
                             label={offer.label}
