@@ -58,7 +58,7 @@ const ContactForm = () => {
                             type="text"
                             id="name"
                             name="name"
-                            placeholder="Imię"
+                            placeholder="Twoje Imię"
                             className="contactform__input"
                         />
                         <label className="contactform__label" htmlFor="name">
@@ -76,7 +76,7 @@ const ContactForm = () => {
                             })}
                             id="email"
                             name="email"
-                            placeholder="Email"
+                            placeholder="Twój Email"
                             className={`contactform__input ${
                                 errors && errors.email ? "error" : ""
                             }`}
@@ -97,7 +97,7 @@ const ContactForm = () => {
                             })}
                             id="phone"
                             name="phone"
-                            placeholder="Numer telefonu"
+                            placeholder="Twój numer telefonu"
                             className={`contactform__input ${
                                 errors && errors.phone ? "error" : ""
                             }`}
