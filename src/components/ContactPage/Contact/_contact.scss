@@ -2,6 +2,10 @@
     &__container {
         width: 90rem;
         margin: 0 auto;
+
+        @include mobileXL {
+            width: $container-width-mobile;
+        }
     }
 
     &__header {
@@ -31,5 +35,10 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 6rem;
+
+        @include mobileXL {
+            flex-direction: column;
+            gap: 8rem;
+        }
     }
 }

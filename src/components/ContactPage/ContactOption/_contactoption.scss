@@ -10,12 +10,19 @@
         width: auto;
         fill: $color-white;
         margin-bottom: 2rem;
+
+        @include mobileXL {
+            height: 8rem;
+        }
     }
 
     p {
         font-size: 2rem;
         letter-spacing: 0.8px;
-
         color: $color-white;
+
+        @include mobileXL {
+            font-size: 2.5rem;
+        }
     }
 }
