@@ -7,19 +7,19 @@
     left: 0;
 
     @include mobileXL {
-        display: none;
+        margin-bottom: 10rem;
     }
 
-    &__mobile {
-        display: none;
+    // &__mobile {
+    //     display: none;
 
-        @include mobileXL {
-            display: block;
-            width: 100vw;
-            height: auto;
-            margin-bottom: 12rem;
-        }
-    }
+    //     @include mobileXL {
+    //         display: block;
+    //         width: 100vw;
+    //         height: auto;
+    //         margin-bottom: 12rem;
+    //     }
+    // }
 
     &__container {
         // position: relative;
