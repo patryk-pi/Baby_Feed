@@ -12,7 +12,7 @@ const Navbar = () => {
         let currentScrollPosition: number = 0;
         let previousScrollPosition: number = 0;
 
-        window.addEventListener("wheel", function () {
+        window.addEventListener("scroll", function () {
             currentScrollPosition = window.scrollY;
 
             if (currentScrollPosition > previousScrollPosition) setHidden(true);

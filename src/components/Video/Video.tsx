@@ -4,6 +4,7 @@ import { Children } from "react";
 import {
     Parallax,
     ParallaxBanner,
+    ParallaxBannerLayer,
     ParallaxProvider,
 } from "react-scroll-parallax";
 
@@ -30,7 +31,7 @@ const Video = ({ source, parallax, speed, marTop }: VideoProps) => {
         <ParallaxProvider>
             <section className="video">
                 <Parallax
-                    speed={speed}
+                    speed={0}
                     style={{
                         marginTop: marTop,
                     }}

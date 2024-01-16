@@ -4,6 +4,10 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column;
+
+        @include mobileXL {
+            width: $container-width-mobile;
+        }
     }
 
     &__boxcontainer {
@@ -12,6 +16,12 @@
         gap: 6rem;
         justify-content: space-between;
         margin-bottom: 10rem;
+
+        @include mobileXL {
+            flex-direction: column;
+            align-items: center;
+            gap: 10rem;
+        }
 
         // grid-template-columns: repeat(2, 1fr);
     }
@@ -51,6 +61,11 @@
         box-shadow: 0px 0px 10px 5px $color-white;
         visibility: hidden;
         opacity: 0;
+
+        @include mobileXL {
+            width: 70%;
+            padding: 4rem 4rem 8rem;
+        }
 
         &-1 {
             transition: 1s 0.2s all;
@@ -100,6 +115,14 @@
         left: 18.5rem;
         bottom: 3rem;
         font-weight: 600;
+
+        @include mobileXL {
+            left: 26.5rem;
+            bottom: 3.5rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            padding: 2rem 7rem;
+        }
     }
 
     &__btn {

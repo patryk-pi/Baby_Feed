@@ -21,7 +21,7 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        height: 10rem;
+        height: 12rem;
 
         @include mobileXL {
             width: auto;
@@ -37,8 +37,8 @@
     // left: 0;
 
     &__logo {
-        height: 10rem;
-        width: 10rem;
+        height: 12rem;
+        width: 12rem;
     }
 
     &__links {
