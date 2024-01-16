@@ -4,10 +4,12 @@
     border-top-left-radius: 12rem;
     border-top-right-radius: 12rem;
     padding-bottom: 10rem;
+    margin-top: 6rem;
     // background-color: rgba(22, 26, 48, 0.8);
 
     @include mobileXL {
-        padding: 0 2rem;
+        width: $container-width-mobile;
+        margin: 0 auto;
     }
 
     &__box {

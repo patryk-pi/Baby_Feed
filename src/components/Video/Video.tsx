@@ -30,18 +30,11 @@ const Video = ({ source, parallax, speed, marTop }: VideoProps) => {
     return (
         <ParallaxProvider>
             <section className="video">
-                <Parallax
-                    speed={0}
-                    style={{
-                        marginTop: marTop,
-                    }}
-                >
-                    <div className="video__container">
-                        <video autoPlay loop muted playsInline>
-                            <source src={source} type="video/mp4" />
-                        </video>
-                    </div>
-                </Parallax>
+                <div className="video__container">
+                    <video autoPlay loop muted playsInline>
+                        <source src={source} type="video/mp4" />
+                    </video>
+                </div>
             </section>
             <section className="video__mobile">
                 <div className="video__container-mobile">
