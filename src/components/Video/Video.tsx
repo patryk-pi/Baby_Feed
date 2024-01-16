@@ -1,6 +1,6 @@
 "use client";
 
-import { Children } from "react";
+import { Children, RefObject } from "react";
 import {
     Parallax,
     ParallaxBanner,
@@ -14,9 +14,10 @@ type VideoProps = {
     speed: number;
     marTop?: string | number | undefined;
     targetElement?: HTMLElement;
+    ref?: RefObject<HTMLElement>;
 };
 
-const Video = ({ source, parallax, speed, marTop }: VideoProps) => {
+const Video = ({ source, parallax, speed, marTop, ref }: VideoProps) => {
     if (!parallax) {
         return (
             <section className="video">
@@ -29,7 +30,7 @@ const Video = ({ source, parallax, speed, marTop }: VideoProps) => {
 
     return (
         <ParallaxProvider>
-            <section className="video">
+            <section ref={ref} className="video">
                 <div className="video__container">
                     <video autoPlay loop muted playsInline>
                         <source src={source} type="video/mp4" />

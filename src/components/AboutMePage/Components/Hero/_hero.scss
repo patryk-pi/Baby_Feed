@@ -1,11 +1,15 @@
 .abouthero {
-    background-image: linear-gradient(
-        $color-primary 0%,
-        rgba(22, 26, 48, 0.8) 40%
-    );
+    // background-image: linear-gradient(
+    //     $color-primary 0%,
+    //     rgba(22, 26, 48, 0.8) 40%
+    // );
+    // padding-top: 3rem;
+    background-image: linear-gradient(rgba(22, 26, 48, 0.8) 0%, #161a30 40%);
     padding-top: 3rem;
-    border-bottom-right-radius: 12rem;
-    border-bottom-left-radius: 12rem;
+    border-top-left-radius: 12rem;
+    border-top-right-radius: 12rem;
+    // border-bottom-right-radius: 12rem;
+    // border-bottom-left-radius: 12rem;
     padding-bottom: 10rem;
 
     &__container {

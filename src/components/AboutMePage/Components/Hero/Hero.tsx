@@ -1,7 +1,10 @@
-import Title from "../Title/Title";
+"use client";
 import Image from "next/image";
 import Point from "./Point";
+import Arrow from "@/components/Arrow/Arrow";
+import Title from "../Title/Title";
 
+import { useState } from "react";
 import {
     aboutTitle1,
     aboutTitle2,
@@ -14,8 +17,11 @@ import {
 } from "@/constants/constants";
 
 const Hero = () => {
+    const [isElementVisible, setIsElementVisible] = useState<boolean>(false);
+    const [isBelow, setIsBelow] = useState<boolean>(true);
+
     return (
-        <section className="abouthero">
+        <section className="abouthero" id="abouthero">
             <Title header="O mnie" />
             <div className="abouthero__container">
                 <Image
@@ -32,7 +38,14 @@ const Hero = () => {
                     <Point title={aboutTitle4} points={developmentArray} />
                 </div>
             </div>
+            <Arrow
+                id="abouthero"
+                state={isElementVisible}
+                setState={setIsElementVisible}
+                isBelow={isBelow}
+            />
         </section>
     );
 };
+
 export default Hero;

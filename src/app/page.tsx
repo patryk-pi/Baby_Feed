@@ -11,7 +11,7 @@ const Home = () => {
             <Navbar />
             <Video
                 source={"/DJVid.mp4"}
-                parallax={true}
+                parallax={false}
                 speed={-800}
                 marTop={"0rem"}
             />

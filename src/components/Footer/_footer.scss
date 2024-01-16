@@ -1,6 +1,7 @@
 .footer {
     // height: 30rem;
     background-color: rgba(240, 236, 229, 0.5);
+    backdrop-filter: blur(30px);
 
     &__container {
         width: $container-width;
