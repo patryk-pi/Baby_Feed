@@ -14,5 +14,9 @@
         width: 70rem;
         display: block;
         margin: 5rem auto;
+
+        @include mobileXL {
+            width: $container-width-mobile;
+        }
     }
 }
