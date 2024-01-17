@@ -17,6 +17,7 @@
 
         @include mobileXL {
             width: $container-width-mobile;
+            font-size: 6rem;
         }
     }
 }
