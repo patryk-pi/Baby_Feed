@@ -18,6 +18,13 @@
         display: flex;
         gap: 7rem;
         margin-bottom: 5rem;
+
+        @include mobileXL {
+            width: $container-width-mobile;
+            flex-direction: column;
+            flex-grow: 0;
+            align-items: center;
+        }
     }
 
     &__image {
@@ -25,6 +32,11 @@
         width: auto;
         border: 10px solid $color-gray;
         border-radius: 20px;
+
+        @include mobileXL {
+            height: 40rem;
+            width: fit-content;
+        }
     }
 
     &__text {
