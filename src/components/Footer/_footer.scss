@@ -11,7 +11,7 @@
         margin: 0 auto;
 
         @include mobileXL {
-            width: auto;
+            width: $container-width-mobile;
         }
     }
 

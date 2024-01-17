@@ -24,7 +24,7 @@
         height: 12rem;
 
         @include mobileXL {
-            width: auto;
+            width: $container-width-mobile;
         }
     }
     // width: $container-width;
