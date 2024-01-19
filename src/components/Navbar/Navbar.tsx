@@ -6,7 +6,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const Navbar = () => {
-    const [hidden, setHidden] = useState(false);
+    const [hidden, setHidden] = useState<boolean>(false);
+    const [mobileOpen, setMobileOpen] = useState<boolean>(false);
 
     useEffect(() => {
         let currentScrollPosition: number = 0;
