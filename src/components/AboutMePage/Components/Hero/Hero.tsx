@@ -4,7 +4,7 @@ import Point from "./Point";
 import Arrow from "@/components/Arrow/Arrow";
 import Title from "../Title/Title";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
     aboutTitle1,
     aboutTitle2,
@@ -20,8 +20,30 @@ const Hero = () => {
     const [isElementVisible, setIsElementVisible] = useState<boolean>(false);
     const [isBelow, setIsBelow] = useState<boolean>(true);
 
+    const section = useRef<HTMLElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+
+            setIsElementVisible(entry.isIntersecting);
+
+            if (entry.isIntersecting) {
+                observer?.disconnect();
+            }
+        });
+
+        if (section.current) {
+            observer.observe(section.current);
+        }
+
+        return () => {
+            observer.disconnect();
+        };
+    });
+
     return (
-        <section className="abouthero" id="abouthero">
+        <section className="abouthero" id="abouthero" ref={section}>
             <Title header="O mnie" />
             <div className="abouthero__container">
                 <Image
