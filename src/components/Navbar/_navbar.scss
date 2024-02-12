@@ -62,7 +62,7 @@
 
         @include mobileXL {
             height: 3.5rem;
-            width: 6rem;
+            width: 6.2rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -77,7 +77,7 @@
             }
 
             &.open {
-                height: 4.6rem;
+                height: 4.7rem;
 
                 span:nth-of-type(1) {
                     transform: rotate(-45deg);

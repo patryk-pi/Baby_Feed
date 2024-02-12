@@ -27,11 +27,6 @@ const Navbar = () => {
 
     const mobileButton = useRef<HTMLDivElement | null>(null);
 
-    const toggleOpen = () => {
-        setMobileOpen(!mobileOpen);
-        mobileButton.classList;
-    };
-
     return (
         <section className={`navbar ${hidden && "hidden"}`}>
             <nav className="navbar__container">
