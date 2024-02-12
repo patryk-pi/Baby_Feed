@@ -2,7 +2,7 @@
 
 import NavLink from "./components/NavLink";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -25,6 +25,13 @@ const Navbar = () => {
         });
     }, []);
 
+    const mobileButton = useRef<HTMLDivElement | null>(null);
+
+    const toggleOpen = () => {
+        setMobileOpen(!mobileOpen);
+        mobileButton.classList;
+    };
+
     return (
         <section className={`navbar ${hidden && "hidden"}`}>
             <nav className="navbar__container">
@@ -37,6 +44,7 @@ const Navbar = () => {
                         className="navbar__logo"
                     />
                 </Link>
+
                 <div className="navbar__links">
                     <ul>
                         <li>
@@ -51,7 +59,11 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="navbar__mobile">
+                <div
+                    className={`navbar__mobile ${mobileOpen && `open`}`}
+                    onClick={() => setMobileOpen(!mobileOpen)}
+                    ref={mobileButton}
+                >
                     <span className="navbar__line"></span>
                     <span className="navbar__line"></span>
                     <span className="navbar__line"></span>
