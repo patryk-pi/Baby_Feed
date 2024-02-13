@@ -4,6 +4,7 @@ import NavLink from "./components/NavLink";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
+import MobileNav from "./components/MobileNav";
 
 const Navbar = () => {
     const [hidden, setHidden] = useState<boolean>(false);
@@ -28,43 +29,46 @@ const Navbar = () => {
     const mobileButton = useRef<HTMLDivElement | null>(null);
 
     return (
-        <section className={`navbar ${hidden && "hidden"}`}>
-            <nav className="navbar__container">
-                <Link href={"/"}>
-                    <Image
-                        src={"/Logo.png"}
-                        height={100}
-                        width={100}
-                        alt="Jaworski Music Logo"
-                        className="navbar__logo"
-                    />
-                </Link>
+        <>
+            <section className={`navbar ${hidden && "hidden"}`}>
+                <nav className="navbar__container">
+                    <Link href={"/"}>
+                        <Image
+                            src={"/Logo.png"}
+                            height={100}
+                            width={100}
+                            alt="Jaworski Music Logo"
+                            className="navbar__logo"
+                        />
+                    </Link>
 
-                <div className="navbar__links">
-                    <ul>
-                        <li>
-                            <NavLink title={"o mnie"} url={"/o-mnie"} />
-                        </li>
-                        <li>
-                            <NavLink title={"oferta"} url={"/oferta"} />
-                        </li>
-                        {/* <NavLink title={"galeria"} url={"/galeria"} /> */}
-                        <li>
-                            <NavLink title={"kontakt"} url={"/kontakt"} />
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    className={`navbar__mobile ${mobileOpen && `open`}`}
-                    onClick={() => setMobileOpen(!mobileOpen)}
-                    ref={mobileButton}
-                >
-                    <span className="navbar__line"></span>
-                    <span className="navbar__line"></span>
-                    <span className="navbar__line"></span>
-                </div>
-            </nav>
-        </section>
+                    <div className="navbar__links">
+                        <ul>
+                            <li>
+                                <NavLink title={"o mnie"} url={"/o-mnie"} />
+                            </li>
+                            <li>
+                                <NavLink title={"oferta"} url={"/oferta"} />
+                            </li>
+                            {/* <NavLink title={"galeria"} url={"/galeria"} /> */}
+                            <li>
+                                <NavLink title={"kontakt"} url={"/kontakt"} />
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        className={`navbar__mobile ${mobileOpen && `open`}`}
+                        onClick={() => setMobileOpen(!mobileOpen)}
+                        ref={mobileButton}
+                    >
+                        <span className="navbar__line"></span>
+                        <span className="navbar__line"></span>
+                        <span className="navbar__line"></span>
+                    </div>
+                </nav>
+            </section>
+            <MobileNav />
+        </>
     );
 };
 
