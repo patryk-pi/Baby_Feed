@@ -11,4 +11,11 @@
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.37);
     backdrop-filter: blur(25px);
+
+    ul {
+        gap: 6rem;
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+    }
 }

@@ -67,7 +67,7 @@ const Navbar = () => {
                     </div>
                 </nav>
             </section>
-            <MobileNav />
+            {mobileOpen && <MobileNav />}
         </>
     );
 };
