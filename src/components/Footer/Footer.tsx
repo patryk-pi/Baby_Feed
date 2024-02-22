@@ -15,6 +15,7 @@ const Footer = () => {
                         height={100}
                         width={100}
                         alt="Jaworski Music Logo"
+                        className="footer__logo"
                     />
                 </Link>
                 <div className="footer__icons">
